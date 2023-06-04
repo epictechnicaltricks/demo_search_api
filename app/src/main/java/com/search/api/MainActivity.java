@@ -47,8 +47,10 @@ public class MainActivity extends  Activity {
 	 EditText edittext1;
 	 ListView listview1;
 	
-	private RequestNetwork search_api;
-	private RequestNetwork.RequestListener _search_api_request_listener;
+	 RequestNetwork search_api;
+	 RequestNetwork.RequestListener _search_api_request_listener;
+
+
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
 		super.onCreate(_savedInstanceState);
@@ -65,7 +67,11 @@ public class MainActivity extends  Activity {
 
 		//INTI
 		search_api = new RequestNetwork(this);
-		
+
+
+
+
+
 		edittext1.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
